@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Roy Hewitt -- Developer -- @r0yhewitt
+
+# THANKS
+
+    Young Hahn, Hack your maps: http://alistapart.com/article/hack-your-maps
+    HTML 5 Boilerplate: https://html5boilerplate.com/
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Mapbox, jQuery, Normalize.css

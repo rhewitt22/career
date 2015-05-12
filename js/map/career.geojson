@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University of Maryland",
+        "index": 2,
+        "zoom": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.94471776485443,
+          38.986016857061486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chesapeake Bay Field Office",
+        "index": 3,
+        "zoom": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.54880225658417,
+          38.97456994166974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Poplar Island",
+        "index": 4,
+        "zoom": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.37772560119629,
+          38.758634655815186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chesapeake Bay Nutria Eradication Program",
+        "index": 5,
+        "zoom": 10
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.09289646148682,
+          38.4489171113606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Southeast Regional Office",
+        "index": 6,
+        "zoom": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3124508857727,
+          33.84587005811653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Carolina State University",
+        "index": 7,
+        "zoom": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.682116,
+          35.785063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Southeast Regional Office",
+        "index": 8,
+        "zoom": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3124508857727,
+          33.84587005811653
+        ]
+      }
+    }
+  ]
+}

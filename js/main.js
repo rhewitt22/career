@@ -3,19 +3,24 @@ $(function() {
       $intro = $('.intro'),
       $sections = $('section'),
       current = 1,
-      locations;
+      locations,
+      $outdated = $('.outdated');
 
   mapboxgl.accessToken = 'pk.eyJ1Ijoicmhld2l0dCIsImEiOiJHSDdveGJrIn0.ZnDLwMOPx2aaEgF5amrquA';
 
+  if (!mapboxgl.util.supported()) {
+    $outdated.show();
+  } else {
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'js/map/outdoors-v7.json',
+      center: [37.8, -96],
+      zoom: 3
+    });
+  }
+
   $.getJSON('js/map/career.geojson', function(geojson) {
     locations = geojson.features;
-  });
-
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'js/map/outdoors-v7.json',
-    center: [37.8, -96],
-    zoom: 3
   });
 
   function flyTo(index) {

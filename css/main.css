@@ -97,6 +97,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 a,
 a:visited,
 a:active {
@@ -179,6 +186,46 @@ a:hover {
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
   transform: rotate(90deg);
+}
+
+@media (max-width: 700px) {
+
+  .scroll {
+    margin-top: -1.2em;
+  }
+
+  .locations {
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+    min-width:0;
+  }
+
+  .intro img {
+    display: none;
+  }
+
+  .locations section {
+    margin-left: 0;
+    padding: 2%;
+  }
+
+  .locations section:not(.active) {
+    opacity: 0;
+  }
+
+  .locations section.active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 33%;
+    overflow-y: scroll;
+  }
+  #map {
+    height: 67%;
+    top: 33%;
+
+  }
 }
 /* ==========================================================================
    Helper classes

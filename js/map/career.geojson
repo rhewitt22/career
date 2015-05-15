@@ -6,7 +6,8 @@
       "properties": {
         "name": "University of Maryland",
         "index": 2,
-        "zoom": 15
+        "zoom": 15,
+        "marker-symbol": "college"
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +22,8 @@
       "properties": {
         "name": "Chesapeake Bay Field Office",
         "index": 3,
-        "zoom": 10
+        "zoom": 10,
+        "marker-symbol": "chemist"
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +38,8 @@
       "properties": {
         "name": "Poplar Island",
         "index": 4,
-        "zoom": 13
+        "zoom": 13,
+        "marker-symbol": "ferry"
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +54,8 @@
       "properties": {
         "name": "Chesapeake Bay Nutria Eradication Program",
         "index": 5,
-        "zoom": 10
+        "zoom": 10,
+        "marker-symbol": "park"
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +70,8 @@
       "properties": {
         "name": "Southeast Regional Office",
         "index": 6,
-        "zoom": 9
+        "zoom": 9,
+        "marker-symbol": "commercial"
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +86,8 @@
       "properties": {
         "name": "North Carolina State University",
         "index": 7,
-        "zoom": 13
+        "zoom": 13,
+        "marker-symbol": "college"
       },
       "geometry": {
         "type": "Point",
@@ -96,7 +102,8 @@
       "properties": {
         "name": "Southeast Regional Office",
         "index": 8,
-        "zoom": 9
+        "zoom": 9,
+        "marker-symbol": "commercial"
       },
       "geometry": {
         "type": "Point",

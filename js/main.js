@@ -4,6 +4,7 @@ $(function() {
       $sections = $('section'),
       current = 1,
       locations,
+      geojson,
       $outdated = $('.outdated');
 
   mapboxgl.accessToken = 'pk.eyJ1Ijoicmhld2l0dCIsImEiOiJHSDdveGJrIn0.ZnDLwMOPx2aaEgF5amrquA';
@@ -19,9 +20,40 @@ $(function() {
     });
   }
 
-  $.getJSON('js/map/career.geojson', function(geojson) {
-    locations = geojson.features;
+  var promise = $.getJSON('js/map/career.geojson');
+
+  map.on('style.load', function() {
+
+    promise.success(function(data) {
+      locations = data.features;
+
+      map.addSource("markers", {
+        "type": "geojson",
+        "data": data
+      });
+
+      map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "minzoom": 8,
+        "layout": {
+          "icon-image": "{marker-symbol}-12",
+          "text-field": "{name}",
+          "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
+          "text-offset": [0, 0.6],
+          "text-anchor": "top"
+        },
+        "paint": {
+          "text-size": 12,
+          "text-halo-color": '#eee',
+          "text-halo-width": 3,
+          "text-halo-blur": 3
+        }
+      });
+    });
   });
+
 
   function flyTo(index) {
     var coords,
